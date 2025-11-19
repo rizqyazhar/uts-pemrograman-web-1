@@ -60,7 +60,7 @@ class PendaftaranController extends BaseController
         $mail->setFrom("rizqyazhar004@ubs.ac.id", "Pendaftaran Online");
         $mail->addAddress($this->request->getPost("email"));
         $mail->addReplyTo("rizqyazhar004@ubs.ac.id", "Information");
-        // $mail->addCC("kresnomurtiprabowo1991@gmail.com", "information");
+        $mail->addCC("kresnomurtiprabowo1991@gmail.com", "information");
 
         $mail->isHTML(true);
         $mail->Subject = "Pendaftaran Online";
